@@ -2,7 +2,7 @@ const middy = require('@middy/core');
 const Logger = require('@dazn/lambda-powertools-logger');
 
 const hello = async (event) => {
-  Logger.debug('In hello()');
+  Logger.debug('In handler hello()');
 
   return { message: 'Hello from your JS template!', event };
 };
