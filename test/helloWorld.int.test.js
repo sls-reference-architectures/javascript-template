@@ -7,7 +7,7 @@ describe('When invoking helloWorld', () => {
     const event = { answer: 42 };
 
     // ACT
-    const result = await helloWorld(event);
+    const result = await helloWorld.hello(event);
 
     // ASSERT
     expect(result.message).toInclude('Hello');
