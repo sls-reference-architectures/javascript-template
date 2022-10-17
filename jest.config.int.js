@@ -1,4 +1,6 @@
+const baseConfig = require('./jest.config');
+
 module.exports = {
-  ...require('./jest.config'),
+  ...baseConfig,
   globalSetup: './test/common/jest.int.setup',
 }

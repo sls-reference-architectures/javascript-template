@@ -19,7 +19,7 @@ const getStack = async (stackName) => {
       StackName: stackName,
     }),
   );
-  const stack = stackResult.Stacks?.[0];
+  const stack = stackResult.Stacks[0];
   if (!stack) {
     throw new Error(`Couldn't find CF stack with name ${stackName}`);
   }
@@ -28,7 +28,7 @@ const getStack = async (stackName) => {
 };
 
 const getApiUrl = (stack) => (
-  stack.Outputs?.find((o) => o.OutputKey === 'HttpApiUrl')?.OutputValue
+  stack.Outputs.find((o) => o.OutputKey === 'HttpApiUrl').OutputValue
 );
 
 module.exports = setup;
