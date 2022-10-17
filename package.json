@@ -4,7 +4,7 @@
   "description": "Template for basic JavaScript serverless project",
   "main": "index.js",
   "scripts": {
-    "deploy": "npx sls deploy",
+    "deploy": "npx sls deploy --conceal",
     "test": "npm run test:unit",
     "test:e2e": "STAGE=dev npx jest e2e.test --config jest.config.e2e.js",
     "test:int": "STAGE=dev npx jest int.test --config jest.config.int.js",
