@@ -34,3 +34,6 @@ jobs:
         run: npm run deploy
       - name: Run E2E tests
         run: npm run test:e2e
+        # The following is for my reference architecture stack only
+      - name: Remove stack from AWS
+        run: npx sls remove
