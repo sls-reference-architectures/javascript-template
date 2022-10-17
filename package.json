@@ -4,6 +4,7 @@
   "description": "Template for basic JavaScript serverless project",
   "main": "index.js",
   "scripts": {
+    "deploy": "npx sls deploy",
     "test": "npm run test:unit",
     "test:int": "npx jest int.test --config jest.config.int.js",
     "test:unit": "npx jest unit.test --config jest.config.js"
