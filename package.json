@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:unit",
+    "test:int": "npx jest int.test --config jest.config.int.js",
     "test:unit": "npx jest unit.test --config jest.config.js"
   },
   "repository": {
