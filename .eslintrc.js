@@ -12,7 +12,4 @@ module.exports = {
     'no-only-tests/no-only-tests': 'error',
     'no-console': 2,
   },
-  settings: {
-    'import/resolver': 'node',
-  },
 };

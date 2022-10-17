@@ -7,5 +7,5 @@ describe('Aristotle says', () => {
 describe('Using jest-extended assertion', () => {
   it('should execute', () => {
     expect().pass('jest-extended is working');
-  })
+  });
 });

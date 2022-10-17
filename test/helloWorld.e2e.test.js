@@ -1,4 +1,4 @@
-const axios = require("axios");
+const axios = require('axios');
 
 describe('When calling /hello', () => {
   it('should return 200', async () => {
