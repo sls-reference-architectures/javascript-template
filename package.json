@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run test:unit",
-    "test:unit": "npx jest unit.test"
+    "test:unit": "npx jest unit.test --config jest.config.js"
   },
   "repository": {
     "type": "git",
