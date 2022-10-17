@@ -4,7 +4,8 @@
   "description": "Template for basic JavaScript serverless project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run test:unit",
+    "test:unit": "npx jest unit.test"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,8 @@
   },
   "homepage": "https://github.com/sls-reference-architectures/javascript-template#readme",
   "devDependencies": {
+    "jest": "^29.2.0",
+    "jest-extended": "^3.1.0",
     "serverless": "^3.23.0"
   }
 }
