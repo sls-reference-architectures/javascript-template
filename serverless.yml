@@ -3,9 +3,18 @@ service: javascript-template
 frameworkVersion: '3'
 
 provider:
+  deploymentBucket:
+    name: com.reference-architecture.deploys
   name: aws
   runtime: nodejs16.x
 
 functions:
   hello:
     handler: src/helloWorld.default
+    events:
+      - httpApi:
+          method: get
+          path: /hello
+
+plugins:
+  - serverless-deployment-bucket
