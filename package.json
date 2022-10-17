@@ -1,0 +1,22 @@
+{
+  "name": "javascript-template",
+  "version": "1.0.0",
+  "description": "Template for basic JavaScript serverless project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sls-reference-architectures/javascript-template.git"
+  },
+  "author": "Seth Orell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sls-reference-architectures/javascript-template/issues"
+  },
+  "homepage": "https://github.com/sls-reference-architectures/javascript-template#readme",
+  "devDependencies": {
+    "serverless": "^3.23.0"
+  }
+}
