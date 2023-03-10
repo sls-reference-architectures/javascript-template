@@ -1,4 +1,4 @@
-const { CloudFormationClient, DescribeStacksCommand } = require('@aws-sdk/client-cloudformation');
+import { CloudFormationClient, DescribeStacksCommand } from '@aws-sdk/client-cloudformation';
 
 const region = process.env.AWS_REGION || 'us-east-1';
 const stage = process.env.STAGE || 'dev';
@@ -29,4 +29,4 @@ const getStack = async (stackName) => {
 
 const getApiUrl = (stack) => stack.Outputs.find((o) => o.OutputKey === 'HttpApiUrl').OutputValue;
 
-module.exports = setup;
+export default setup;

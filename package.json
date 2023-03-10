@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Template for basic JavaScript serverless project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "deploy": "npx sls deploy --conceal",
     "lint": "eslint .",
