@@ -1,7 +1,7 @@
 module.exports = {
   env: {
     jest: true,
-    es2021: true,
+    es2022: true,
   },
   extends: ['airbnb-base', 'prettier'],
   parserOptions: {
