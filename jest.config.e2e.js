@@ -1,8 +1,6 @@
-import baseConfig from './jest.config.js';
+const baseConfig = require('./jest.config.js');
 
-const jestE2EConfig = {
+module.exports = {
   ...baseConfig,
   globalSetup: './test/common/jest.e2e.setup',
 };
-
-export default jestE2EConfig;

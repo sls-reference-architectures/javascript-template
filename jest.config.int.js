@@ -1,8 +1,6 @@
-import baseConfig from './jest.config.js';
+const baseConfig = require('./jest.config.js');
 
-const jestIntConfig = {
+module.exports = {
   ...baseConfig,
   globalSetup: './test/common/jest.int.setup',
 };
-
-export default jestIntConfig;
