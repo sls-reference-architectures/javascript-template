@@ -1,6 +1,6 @@
 ### Upgrade commit
 
-In package.json, add `"types": "module"`
+In package.json, add `"type": "module"`
 Change .eslintrc.js to .eslintrc.cjs
 In .eslintrc.cjs, make it look something like:
 
