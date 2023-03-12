@@ -40,7 +40,8 @@
     "lint-staged": "^13.2.0",
     "prettier": "^2.8.4",
     "serverless": "^3.28.1",
-    "serverless-deployment-bucket": "^1.6.0"
+    "serverless-deployment-bucket": "^1.6.0",
+    "serverless-esbuild": "^1.39.0"
   },
   "dependencies": {
     "@dazn/lambda-powertools-logger": "^1.28.1",
