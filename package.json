@@ -41,7 +41,7 @@
     "prettier": "^3.0.3",
     "serverless": "^3.36.0",
     "serverless-deployment-bucket": "^1.6.0",
-    "serverless-esbuild": "^1.48.4"
+    "serverless-esbuild": "^1.48.5"
   },
   "dependencies": {
     "@dazn/lambda-powertools-logger": "^1.28.1",
