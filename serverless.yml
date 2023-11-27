@@ -5,6 +5,7 @@ frameworkVersion: '3'
 provider:
   deploymentBucket:
     name: com.reference-architecture.deploys
+  logRetentionInDays: 7
   name: aws
   runtime: nodejs18.x
 
