@@ -1,7 +1,5 @@
 import middy from '@middy/core';
 import Logger from '@dazn/lambda-powertools-logger';
-// const middy = require('@middy/core');
-// const Logger = require('@dazn/lambda-powertools-logger');
 
 const hello = async (event) => {
   Logger.debug('In handler hello()');
