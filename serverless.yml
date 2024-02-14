@@ -7,7 +7,13 @@ provider:
     name: com.reference-architecture.deploys
   logRetentionInDays: 7
   name: aws
-  runtime: nodejs18.x
+  runtime: nodejs20.x
+
+custom:
+  esbuild:
+    bundle: true # DEFAULT
+    minify: false
+    platform: node # DEFAULT
 
 functions:
   hello:
