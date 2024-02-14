@@ -12,6 +12,7 @@ provider:
 custom:
   esbuild:
     bundle: true # DEFAULT
+    format: esm
     minify: false
     platform: node # DEFAULT
 
