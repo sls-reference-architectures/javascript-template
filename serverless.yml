@@ -12,7 +12,11 @@ provider:
 custom:
   esbuild:
     bundle: true # DEFAULT
-    format: esm
+    # exclude:
+    # - '@aws-sdk'
+    # - '@smithy'
+    # - uuid
+    # format: esm
     minify: false
     platform: node # DEFAULT
 
