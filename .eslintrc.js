@@ -1,11 +1,11 @@
 module.exports = {
   env: {
     jest: true,
-    es2022: true,
+    es2022: true
   },
   extends: ['airbnb-base', 'prettier'],
   parserOptions: {
-    ecmaVersion: 'latest',
+    ecmaVersion: 'latest'
   },
   plugins: ['no-only-tests'],
   root: true,
@@ -13,6 +13,6 @@ module.exports = {
     'import/extensions': 0,
     'no-use-before-define': 'off',
     'no-only-tests/no-only-tests': 'error',
-    'no-console': 2,
-  },
-};
+    'no-console': 2
+  }
+}
