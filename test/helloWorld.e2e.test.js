@@ -1,13 +1,13 @@
 import axios from 'axios'
 
 describe('When calling /hello', () => {
-  it('should return 200', async () => {
+  it.only('should return 200', async () => {
     // ARRANGE
     const options = {
       baseURL: process.env.API_URL,
       validateStatus: () => true
     }
-    const path = createPath()
+    const path = '/hello'
 
     // ACT
     const { status } = await axios.get(path, options)
@@ -16,6 +16,3 @@ describe('When calling /hello', () => {
     expect(status).toEqual(200)
   })
 })
-
-// Test for declare-first
-const createPath = () => '/hello'
