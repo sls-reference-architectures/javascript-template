@@ -27,7 +27,7 @@
   "devDependencies": {
     "@aws-sdk/client-cloudformation": "^3.709.0",
     "axios": "^1.7.9",
-    "esbuild": "^0.24.0",
+    "esbuild": "^0.24.2",
     "esbuild-jest": "^0.5.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
