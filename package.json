@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/sls-reference-architectures/javascript-template#readme",
   "devDependencies": {
-    "@aws-sdk/client-cloudformation": "^3.709.0",
+    "@aws-sdk/client-cloudformation": "^3.734.0",
     "axios": "^1.7.9",
     "esbuild": "^0.24.0",
     "esbuild-jest": "^0.5.0",
