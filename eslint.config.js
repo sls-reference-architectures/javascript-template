@@ -41,12 +41,6 @@ export default [
         sourceType: 'module',
       }
     },
-    // env: {
-    //   jest: true,
-    //   es2021: true,
-    //   node: true,
-    // },
-    // extends: ['prettier'],
     rules: {
       'import/extensions': 0,
       'no-use-before-define': 'off',
