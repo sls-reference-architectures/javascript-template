@@ -1,6 +1,6 @@
 service: javascript-template
 
-frameworkVersion: '3'
+licenseKey: ${ssm:/aws/reference/secretsmanager/serverless-framework-access-key}
 
 provider:
   deploymentBucket:
@@ -8,17 +8,6 @@ provider:
   logRetentionInDays: 7
   name: aws
   runtime: nodejs20.x
-
-custom:
-  esbuild:
-    bundle: true # DEFAULT
-    # exclude:
-    # - '@aws-sdk'
-    # - '@smithy'
-    # - uuid
-    # format: esm
-    minify: false
-    platform: node # DEFAULT
 
 functions:
   hello:
@@ -28,9 +17,15 @@ functions:
           method: get
           path: /hello
 
+build:
+  esbuild:
+    bundle: true
+    minify: true
+    exclude:
+      - '@aws-sdk/*'
+
 plugins:
   - serverless-deployment-bucket
-  - serverless-esbuild
 
 package:
   individually: true

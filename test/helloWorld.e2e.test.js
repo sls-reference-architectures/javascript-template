@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 describe('When calling /hello', () => {
-  it.only('should return 200', async () => {
+  it('should return 200', async () => {
     // ARRANGE
     const options = {
       baseURL: process.env.API_URL,
