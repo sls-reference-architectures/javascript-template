@@ -1,5 +1,6 @@
 // eslint-disable import/no-extraneous-dependencies
 import { FlatCompat } from '@eslint/eslintrc';
+import js from '@eslint/js'
 import { fileURLToPath } from 'url';
 import path from 'path';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
@@ -13,8 +14,9 @@ const compat = new FlatCompat({
 });
 
 export default [
+  js.configs.recommended,
   // Migrate extends using FlatCompat
-  ...compat.extends('airbnb-base', 'prettier'),
+  ...compat.extends('prettier'),
 
   // Migrate env using FlatCompat
   ...compat.env({
