@@ -7,7 +7,7 @@ provider:
     name: com.reference-architecture.deploys
   logRetentionInDays: 7
   name: aws
-  runtime: nodejs20.x
+  runtime: nodejs22.x
 
 functions:
   hello:
