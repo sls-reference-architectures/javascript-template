@@ -8,4 +8,4 @@ const hello = async (event) => {
 }
 export const helloHandler = middy(hello)
 
-export const placeHolder = () => {}
+export const placeHolder = () => { }
