@@ -17,5 +17,8 @@ export default defineConfig([
     languageOptions: { globals: pluginJest.environments.globals.globals },
     rules: { 'no-only-tests/no-only-tests': 'error' },
   },
-  { files: ['**/*.{js,mjs,cjs}'], languageOptions: { globals: globals.node } },
+  {
+    files: [
+      '**/*.{js,mjs,cjs}'], languageOptions: { globals: globals.node }
+  },
 ]);
