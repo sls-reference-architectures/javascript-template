@@ -3,11 +3,8 @@ import Logger from '@dazn/lambda-powertools-logger';
 
 const hello = async (event) => {
   Logger.debug('In handler hello()');
-  printer('word');
-  const returnEvent = { ...event, foo: 'bar' };
 
-  return returnEvent;
+  return { message: 'Hello from your JS template!', event };
 };
 
-const printer = (name) => console.log(`Hello ${name}!`);
-export const helloHandler = middy(hello);
+export default middy(hello);
