@@ -50,7 +50,7 @@
     "@middy/core": "^6.1.6"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,md,yml,json}": "npx prettier . --write --ignore-path .gitignore"
+    "*.{js, mjs}": "eslint --cache --fix",
+    "*.{js,md,mjs,yml,json}": "npx prettier . --write --ignore-path .gitignore"
   }
 }

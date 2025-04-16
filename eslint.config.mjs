@@ -6,7 +6,10 @@ import noOnlyTests from 'eslint-plugin-no-only-tests';
 
 export default defineConfig([
   {
-    files: ['**/*.{js,mjs,cjs}'], plugins: { js }, extends: ['js/recommended'], rules: { 'max-params': ['warn', 1], 'no-param-reassign': ['error', { props: true }] },
+    files: ['**/*.{js,mjs,cjs}'],
+    plugins: { js },
+    extends: ['js/recommended'],
+    rules: { 'max-params': ['warn', 1], 'no-param-reassign': ['error', { props: true }] },
   },
   {
     files: ['**/*.test.js'],
@@ -15,7 +18,7 @@ export default defineConfig([
     rules: { 'no-only-tests/no-only-tests': 'error' },
   },
   {
-    files: [
-      '**/*.{js,mjs,cjs}'], languageOptions: { globals: globals.node }
+    files: ['**/*.{js,mjs,cjs}'],
+    languageOptions: { globals: globals.node },
   },
 ]);
