@@ -1,6 +1,6 @@
-const baseConfig = require('./jest.config.js')
+import baseConfig from './jest.config.js';
 
-module.exports = {
+const config = {
   ...baseConfig,
   transformIgnorePatterns: [
     '/node_modules/(?!(@middy/core|@middy/http-error-handler|@middy/util|@middy/input-output-logger)/)',
@@ -13,3 +13,5 @@ module.exports = {
   },
   globalSetup: './test/common/jest.int.setup'
 }
+
+export default config;
