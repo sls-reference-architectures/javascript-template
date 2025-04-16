@@ -1,6 +1,6 @@
 // eslint-disable import/no-extraneous-dependencies
 import { FlatCompat } from '@eslint/eslintrc';
-import js from '@eslint/js'
+import js from '@eslint/js';
 import { fileURLToPath } from 'url';
 import path from 'path';
 import noOnlyTests from 'eslint-plugin-no-only-tests';
@@ -28,18 +28,14 @@ export default [
   // Migrate plugins using FlatCompat and fixupPluginRoles for compatibility
   // ...compat.plugins('older plugins'),
   {
-    ignores: [
-      'node_modules/*',
-      '.serverless/*',
-      'eslint.config.js',
-    ]
+    ignores: ['node_modules/*', '.serverless/*', 'eslint.config.js'],
   },
   {
     languageOptions: {
       parserOptions: {
         ecmaVersion: 'latest',
         sourceType: 'module',
-      }
+      },
     },
     rules: {
       'import/extensions': 0,
@@ -48,7 +44,7 @@ export default [
       'no-console': 2,
     },
     plugins: {
-      "no-only-tests": noOnlyTests,
-    }
-  }
-]
+      'no-only-tests': noOnlyTests,
+    },
+  },
+];

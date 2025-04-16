@@ -11,7 +11,7 @@ const config = {
     '^@middy/http-error-handler$': '<rootDir>/node_modules/@middy/http-error-handler',
     '^@middy/input-output-logger$': '<rootDir>/node_modules/@middy/input-output-logger',
   },
-  globalSetup: './test/common/jest.int.setup'
-}
+  globalSetup: './test/common/jest.int.setup',
+};
 
 export default config;
