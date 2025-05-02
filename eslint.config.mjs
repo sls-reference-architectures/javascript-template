@@ -8,8 +8,9 @@ export default defineConfig([
   globalIgnores(['.serverless']),
   {
     files: ['**/*.{js,mjs,cjs}'],
-    plugins: { js },
     extends: ['js/recommended'],
+    languageOptions: { globals: globals.node },
+    plugins: { js },
     rules: { 'max-params': ['warn', 1], 'no-param-reassign': ['error', { props: true }] },
   },
   {
@@ -17,9 +18,5 @@ export default defineConfig([
     plugins: { jest: pluginJest, 'no-only-tests': noOnlyTests },
     languageOptions: { globals: pluginJest.environments.globals.globals },
     rules: { 'no-only-tests/no-only-tests': 'error' },
-  },
-  {
-    files: ['**/*.{js,mjs,cjs}'],
-    languageOptions: { globals: globals.node },
   },
 ]);
